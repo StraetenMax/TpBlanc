@@ -21,4 +21,18 @@ public class Commande extends DocImprime {
 	public void setMontantCommand(int montantCommand){
 		this.montantCommand = montantCommand;
 	}
+	
+	//méthodes
+	public boolean EstInferieurA(Commande cdt1){
+		boolean cdt2;
+		if(this.montantCommand<cdt1.getMontantCommand()){
+			 cdt2= true;
+		}else{
+			cdt2= false;
+		}return cdt2;
+	}
+	public String description(){
+		String str= super.description()+" dont le montant est de "+this.getMontantCommand()+" euros";
+		return str;
+	}
 }
