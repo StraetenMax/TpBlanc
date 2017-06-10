@@ -32,8 +32,5 @@ public class DocImprime extends Document {
 		String str1 =super.description()+" qui a été imprimé le "+this.getDateImprim();
 		return str1;
 	}
-	
-	
-	
 
 }
