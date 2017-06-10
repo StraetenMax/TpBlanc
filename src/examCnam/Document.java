@@ -31,8 +31,18 @@ public class Document {
 	}
 	
 	//méthodes
-	public String 
-	
+	public String Classifier(){
+		String str="Classifier Document";
+		return str;
+	}
+	public String Trouver(){
+		String str1 ="Trouver Document";
+		return str1;
+	}
+	public String description(){
+		String str2 ="Le document a le code : "+this.getCodeDocument()+" pour "+this.getNbPages()+" pages";
+		return str2;
+	}
 	
 }
 	
