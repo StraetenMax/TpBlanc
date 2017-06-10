@@ -1,8 +1,8 @@
 package examCnam;
 
-public class codeDocumentException extends Exception{
+public class CodeDocumentException extends Exception{
 	
-	public codeDocumentException(){
+	public CodeDocumentException(){
 		System.out.println("Instanciation de document avec code vide");
 	}
 

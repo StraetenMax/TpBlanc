@@ -11,7 +11,7 @@ public class Facture extends DocImprime{
 		montant = 0;
 		this.setTypeFact();
 	}
-	public Facture(String codeDocument, int nbPages,String dateImprim, int montant){
+	public Facture(String codeDocument, int nbPages,String dateImprim, int montant)throws CodeDocumentException, NbPagesException{
 		super(codeDocument, nbPages, dateImprim);
 		this.montant = montant;
 		this.setTypeFact();

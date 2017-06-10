@@ -9,7 +9,7 @@ public class Commande extends DocImprime {
 		super();
 		montantCommand = 0;
 	}
-	public Commande(String codeCommande,int nbPages, String dateImprim,int montantCommand){
+	public Commande(String codeCommande,int nbPages, String dateImprim,int montantCommand)throws CodeDocumentException, NbPagesException{
 		super(codeCommande, nbPages, dateImprim);
 		this.montantCommand= montantCommand;
 	}

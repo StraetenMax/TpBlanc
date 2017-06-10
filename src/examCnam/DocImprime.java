@@ -9,9 +9,10 @@ public class DocImprime extends Document {
 		super();
 		dateImprim = "";
 	}
-	public DocImprime(String codeDocument, int nbPages,String dateImprim){
-		super(codeDocument,nbPages);
+	public DocImprime(String codeDocument, int nbPages,String dateImprim) throws CodeDocumentException, NbPagesException{			
+		super(codeDocument, nbPages);
 		this.dateImprim = dateImprim;
+		
 	}
 	
 	//accesseur et mutateur

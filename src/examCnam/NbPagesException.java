@@ -1,11 +1,11 @@
 package examCnam;
 
-public class nbPagesException extends Exception{
+public class NbPagesException extends Exception{
 
-	public nbPagesException(){
+	public NbPagesException(){
 		System.out.println("Instanciation de document avec nombre de pages négatif");
 	}
-	public nbPagesException(int nbPages){
+	public NbPagesException(int nbPages){
 		System.out.println("Instanciation de documents avec nombre de pages négatif :"+nbPages);
 	}
 }

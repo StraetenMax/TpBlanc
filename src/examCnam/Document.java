@@ -11,9 +11,17 @@ public class Document {
 		nbPages = 0;
 	}
 	
-	public Document(String codeDocument, int nbPages){
+	public Document(String codeDocument, int nbPages)throws CodeDocumentException, NbPagesException {	
+		
+		if(codeDocument == ""){
+			throw new CodeDocumentException();
+		}
+		if(nbPages<0){
+			throw new NbPagesException(nbPages);
+		}
+		else{
 		this.codeDocument = codeDocument;
-		this.nbPages = nbPages;
+		this.nbPages = nbPages;}
 	}
 	
 	//mutateurs et accesseurs
